@@ -49,7 +49,7 @@ const UserSchema = new Schema({
       message: '{VALUE} is not a valid password!',
     },
   },
-});
+}, { timestamps: true });
 
 UserSchema.pre('save', function (next) {
   if (this.isModified('password')) {
