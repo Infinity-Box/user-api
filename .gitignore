@@ -2,4 +2,6 @@ node_modules
 
 notes.txt
 
+yarn-error.log
 .DS_Store
+/*.env
