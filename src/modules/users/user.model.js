@@ -65,6 +65,21 @@ UserSchema.methods = {
   authenticateUser(password) {
     return compare(password, this.password);
   },
+  createToken() {
+    return jwt.sign(
+      {
+        _id: this._id,
+      },
+      constants.JWT_SETCRET,
+    );
+  },
+  toJSON() {
+    return {
+      _id: this._id,
+      userName: this.userName,
+      token: `JWT ${this.createToken()}`
+    };
+  },
 };
 
 export default mongoose.model('User', UserSchema)
