@@ -8,11 +8,11 @@ const testConfig = {
 };
 
 const prodConfig = {
-  MONGO_URL: '138.197.215.135',
+  MONGO_URL: 'http://138.197.215.135',
 };
 
 const defaultConfig = {
-  PORT: process.env.PORT || 4000,
+  PORT: process.env.PORT || 5000
 }
 
 
