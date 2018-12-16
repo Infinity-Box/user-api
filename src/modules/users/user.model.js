@@ -1,6 +1,7 @@
 import mongoose, { Schema } from 'mongoose';
 import validator from 'validator';
 
+import {passwordReg} from './user.validation';
 
 const UserSchema = new Schema({
   email: {
@@ -32,7 +33,7 @@ const UserSchema = new Schema({
     maxlength: [18, 'Password needs to be less than 18 characters'],
     validate: {
       validator(password) {
-
+        return passwordReg.test(password);
       },
       message: '[VALUE] is not a valid password!',
     },

@@ -1,21 +1,21 @@
 const devConfig = {
-  MONGO_URL: 'mongodb://localhost/makenodejsapi-dev',
+  MONGO_URL: 'mongodb://localhost/infinityapi-dev',
 };
 
 const testConfig = {
-  MONGO_URL: 'mongodb://localhost/makenodejsapi-dev',
+  MONGO_URL: 'mongodb://localhost/infinityapi-dev',
 };
 
 const prodConfig = {
-  MONGO_URL: 'mongodb://localhost/makenodejsapi-dev',
+  MONGO_URL: 'mongodb://localhost/infinityapi-dev',
 };
 
 const defaultConfig = {
-  PORT: process.env.PORT || 4000;
+  PORT: process.env.PORT || 4000,
 }
 
 
-function encConfig(env) {
+function envConfig(env) {
   switch(env) {
     case 'development':
       return devConfig;

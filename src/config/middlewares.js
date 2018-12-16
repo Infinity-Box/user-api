@@ -4,7 +4,7 @@ import compression from 'compression';
 import helmet from 'helmet';
 
 const isDev = process.env.NODE_ENV === 'development';
-const isProd = process.env.NODE_ENV ==== 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 export default app => {
   if (isProd) {
