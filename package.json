@@ -6,16 +6,25 @@
     "author": "Jasmine Anderson <jazz2900@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev:build": "webpack -w",
+        "clean": "rimraf dist",
+        "dev:build": "yarn run clean && webpack -w",
         "dev": "cross-env  NODE_ENV=development nodemon dist/index.bundle.js"
     },
     "dependencies": {
+        "bcrypt-nodejs": "^0.0.3",
         "body-parser": "^1.18.3",
         "compression": "^1.7.3",
         "express": "^4.15.3",
+        "express-validation": "^1.0.2",
         "helmet": "^3.15.0",
+        "joi": "^14.3.0",
+        "jsonwebtoken": "^8.4.0",
         "mongodb": "^3.1.10",
         "mongoose": "^5.4.0",
+        "mongoose-unique-validator": "^2.0.2",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "passport-local": "^1.0.0",
         "validator": "^10.9.0"
     },
     "devDependencies": {
@@ -30,6 +39,7 @@
         "eslint-plugin-class-property": "1.1.0",
         "morgan": "^1.9.1",
         "nodemon": "^1.18.9",
+        "rimraf": "^2.6.2",
         "webpack": "^4.27.1",
         "webpack-cli": "^3.1.2",
         "webpack-node-externals": "^1.7.2"

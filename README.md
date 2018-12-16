@@ -1,8 +1,8 @@
 # user-api
 
 server running on port:4000
-api setup:
-yarn dev
+server setup:
+run yarn dev
 
 
 database running on localhost: 27017
