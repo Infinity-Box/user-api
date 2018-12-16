@@ -8,7 +8,7 @@ const testConfig = {
 };
 
 const prodConfig = {
-  MONGO_URL: 'mongodb://localhost/infinityapi-dev',
+  MONGO_URL: '138.197.215.135',
 };
 
 const defaultConfig = {
@@ -22,6 +22,8 @@ function envConfig(env) {
       return devConfig;
     case 'test':
       return testConfig;
+    case 'production'
+      return prodConfig;
     default:
       return prodConfig;
   }
