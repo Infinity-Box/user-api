@@ -62,8 +62,8 @@ const defaultConfig = {
 ### Running Developer Build
 
 ```
-yarn dev:build**
-yarn dev**
+yarn dev:build
+yarn dev
 ```
 
 ## Running the tests
@@ -119,14 +119,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
+* Thanks Dan for your patience and believing we can do it!
+* Thank you Elliot for helping me us with the database!
 * etc
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
