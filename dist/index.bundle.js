@@ -95,7 +95,7 @@ module.exports =
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nconst devConfig = {\n  MONGO_URL: 'mongodb://localhost/infinityapi-dev',\n  JWT_SECRET: 'thisisasecret'\n};\n\nconst testConfig = {\n  MONGO_URL: 'mongodb://localhost/infinityapi-dev'\n};\n\nconst prodConfig = {\n  MONGO_URL: 'http://138.197.215.135'\n};\n\nconst defaultConfig = {\n  PORT: process.env.PORT || 5000\n};\n\nfunction envConfig(env) {\n  switch (env) {\n    case 'development':\n      return devConfig;\n    case 'test':\n      return testConfig;\n    default:\n      return prodConfig;\n  }\n}\n\nexports.default = Object.assign({}, defaultConfig, envConfig(\"development\"));\n\n//# sourceURL=webpack:///./src/config/constants.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nconst devConfig = {\n  MONGO_URL: 'mongodb://localhost/infinityapi-dev',\n  JWT_SECRET: 'thisisasecret'\n};\n\nconst testConfig = {\n  MONGO_URL: 'mongodb://localhost/infinityapi-dev'\n};\n\nconst prodConfig = {\n  MONGO_URL: 'http://138.197.215.135'\n};\n\nconst defaultConfig = {\n  PORT: process.env.PORT || 6000\n};\n\nfunction envConfig(env) {\n  switch (env) {\n    case 'development':\n      return devConfig;\n    case 'test':\n      return testConfig;\n    default:\n      return prodConfig;\n  }\n}\n\nexports.default = Object.assign({}, defaultConfig, envConfig(\"development\"));\n\n//# sourceURL=webpack:///./src/config/constants.js?");
 
 /***/ }),
 
