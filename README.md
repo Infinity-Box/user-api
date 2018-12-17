@@ -30,11 +30,20 @@ yarn start
 You can also use npm instead of yarn.
 
 
-### Running The Database
+### Running The Database on Local Host
 
-**mongod**
-**mongo**
+Step 1:
+```
+mongod
+```
 
+
+Step 2:
+
+Open new console tab and run:
+```
+mongo
+```
 
 ### Running The Database
 
