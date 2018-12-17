@@ -114,6 +114,16 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
+<<<<<<< HEAD
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+=======
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
