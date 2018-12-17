@@ -70,7 +70,7 @@ UserSchema.methods = {
       {
         _id: this._id,
       },
-      constants.JWT_SETCRET,
+      constants.JWT_SECRET,
     );
   },
   toJSON() {
