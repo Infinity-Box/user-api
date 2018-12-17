@@ -16,35 +16,21 @@ Tips: LocalHost is set on Port 5000
 - Basic Knowledge of Babel & Webpack
 
 **Helpful Knowledge**
+
 - Basic Knowledge of Asynchronous Systems & Promises in Javascript
 
 
 #### Installing
 
-**npm install or yarn install**
-**npm start or yarn start**
-
+```
+yarn install
+yarn start
 
 ```
-Give examples
-```
 
-### Installing
 
-**npm install or yarn install**
-**npm start or yarn start**
+You can also use npm instead of yarn.
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ### Running The Database
 
