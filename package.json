@@ -8,7 +8,7 @@
     "scripts": {
         "clean": "rimraf dist",
         "dev:build": "yarn run clean && webpack -w --mode development",
-        "dev": "cross-env  NODE_ENV=development nodemon dist/index.bundle.js",
+        "dev": "cross-env  NODE_ENV=development dist/index.bundle.js",
         "start": "NODE_ENV=production nodemon dist/index.bundle.js"
     },
     "dependencies": {
