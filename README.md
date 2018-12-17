@@ -31,8 +31,8 @@ Give examples
 
 ### Installing
 
-# npm install or yarn install
-# npm start or yarn start
+** npm install or yarn install **
+** npm start or yarn start **
 
 ```
 Give the example
@@ -48,8 +48,8 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### Running The Database
 
-# mongod
-# mongo
+** mongod **
+** mongo **
 
 
 ### Running The Database
@@ -77,8 +77,8 @@ const defaultConfig = {
 
 ### Running Developer Build
 
-# yarn dev:build
-# yarn dev
+** yarn dev:build **
+** yarn dev **
 
 
 ## Running the tests
