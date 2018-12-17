@@ -15,11 +15,11 @@ Tips: LocalHost is set on Port 5000
 - Basic Knowledge of MongoDB
 - Basic Knowledge of Babel & Webpack
 
-* Helpful *
+** Helpful Knowledge **
 - Basic Knowledge of Asynchronous Systems & Promises in Javascript
 
 
-#Installing
+###### Installing
 
 ** npm install or yarn install **
 ** npm start or yarn start **
