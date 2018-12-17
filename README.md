@@ -25,9 +25,7 @@ Tips: LocalHost is set on Port 5000
 ```
 yarn install
 yarn start
-
 ```
-
 
 You can also use npm instead of yarn.
 
@@ -112,8 +110,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Jasmine Anderson** - *Initial work* - [jazz2900](https://github.com/jazz2900)
-* **Stephanie Cheribin** - *Initial work* - [StephanieCherubin](https://github.com/StephanieCherubin)
+* **Jasmine Anderson** - [jazz2900](https://github.com/jazz2900)
+* **Stephanie Cheribin** - [StephanieCherubin](https://github.com/StephanieCherubin)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
