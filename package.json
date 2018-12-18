@@ -6,9 +6,10 @@
     "author": "Jasmine Anderson <jazz2900@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "clean": "rimraf dist",
-        "devnode": "npm run clean && webpack --mode development && cross-env  NODE_ENV=development nodemon dist/index.bundle.js",
-        "devyarn": "yarn run clean && webpack --mode development && cross-env  NODE_ENV=development nodemon dist/index.bundle.js"
+      "clean": "rimraf dist",
+      "dev:node": "npm run clean && webpack --mode development && cross-env NODE_ENV=development nodemon dist/index.bundle.js",
+      "dev:yarn": "yarn run clean && webpack --mode development && cross-env NODE_ENV=development nodemon dist/index.bundle.js",
+      "start": "cross-env NODE_ENV=production webpack"
     },
     "dependencies": {
         "bcrypt-nodejs": "^0.0.3",

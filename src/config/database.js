@@ -4,11 +4,10 @@ import constants from './constants';
 //Remove the warning with Promise
 mongoose.Promise = global.Promise;
 
-const isProd = process.env.NODE_ENV === 'production';
-
 //Connect the db with the url provided
 try {
-  mongoose.connect(constants.MONGO_URL);
+  mongoose.connect(constants.MONGO_URL, { useNewUrlParser: true });
+  mongoose.set('useCreateIndex', true);
 } catch (err) {
   mongoose.createConnection(constants.MONGO_URL);
 }

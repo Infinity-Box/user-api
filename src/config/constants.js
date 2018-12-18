@@ -1,5 +1,5 @@
 const devConfig = {
-  MONGO_URL:'mongodb://jazz2900:awe123@ds135844.mlab.com:35844/user-api',
+  MONGO_URL: 'mongodb://localhost/infinityapi-dev',
 };
 
 const testConfig = {

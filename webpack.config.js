@@ -1,8 +1,8 @@
 const nodeExternals = require('webpack-node-externals');
  const path = require('path');
 
- module.exports = {
-     target: 'node',
+module.exports = {
+     mode: 'production',
      externals: [nodeExternals()],
      //This is where webpack will compile from
      entry: {
@@ -25,4 +25,4 @@ const nodeExternals = require('webpack-node-externals');
             }
         ]
      }
- }
+}
