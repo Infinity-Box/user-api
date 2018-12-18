@@ -11,7 +11,7 @@ const prodConfig = {
 };
 
 const defaultConfig = {
-  PORT: process.env.PORT || port
+  PORT: process.env.PORT
 }
 
 
