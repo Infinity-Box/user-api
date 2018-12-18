@@ -1,6 +1,5 @@
 const devConfig = {
-  MONGO_URL: 'mongodb://localhost/infinityapi-dev',
-  JWT_SECRET: 'thisisasecret',
+  MONGO_URL:'mongodb://jazz2900:awe123@ds135844.mlab.com:35844/user-api'
 };
 
 const testConfig = {
@@ -8,7 +7,7 @@ const testConfig = {
 };
 
 const prodConfig = {
-  MONGO_URL: 'http://138.197.215.135',
+  MONGO_URL:'mongodb://jazz2900:awe123@ds135844.mlab.com:35844/user-api'
 };
 
 const defaultConfig = {
@@ -22,8 +21,6 @@ function envConfig(env) {
       return devConfig;
     case 'test':
       return testConfig;
-    case 'production'
-      return prodConfig;
     default:
       return prodConfig;
   }
@@ -31,5 +28,5 @@ function envConfig(env) {
 
 export default {
   ...defaultConfig,
-  ...envConfig(process.env.NODE_ENV),
+  // ...envConfig(process.env.NODE_ENV),
 };

@@ -29,11 +29,15 @@ const localStrategy = new LocalStrategy(
   },
 );
 
+// Person having similiar issue
+// https://stackoverflow.com/questions/45858758/passport-jwt-unauthorized
 // Jwt strategy
 const jwtOpts = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('JW'),
-  secretOrKey: constants.JWT_SECRET,
+  jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
+  secretOrKey: 'thisisasecret',
 };
+
+// const secretOrKey = constants.JWT_SECRET;
 
 const jwtStrategy = new JWTStrategy(jwtOpts, async (payload, done) => {
   try {
