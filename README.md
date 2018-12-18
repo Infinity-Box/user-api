@@ -118,7 +118,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Authors
 
 * **Jasmine Anderson** - [jazz2900](https://github.com/jazz2900)
-* **Stephanie Cheribin** - [StephanieCherubin](https://github.com/StephanieCherubin)
+* **Stephanie Cherubin** - [StephanieCherubin](https://github.com/StephanieCherubin)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
