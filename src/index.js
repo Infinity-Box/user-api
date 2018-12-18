@@ -32,7 +32,7 @@ app.listen(constants.PORT, err => {
     }
     else {
       console.log(`
-        Server running on Mlab Database
+        Server running on ${constants.PORT}
         ---
         Running on ${process.env.NODE_ENV}
         ---

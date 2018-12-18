@@ -6,15 +6,11 @@ mongoose.Promise = global.Promise;
 
 const isProd = process.env.NODE_ENV === 'production';
 
-//Connect the db with the url provide
+//Connect the db with the url provided
 try {
   mongoose.connect(constants.MONGO_URL);
 } catch (err) {
-  if (isProd) {
-    console.log("Database Not Found in Production")
-  } else{
-    console.log("Database Not Found")
-  }
+  mongoose.createConnection(constants.MONGO_URL);
 }
 
 mongoose.connection
