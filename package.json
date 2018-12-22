@@ -8,7 +8,7 @@
     "scripts": {
         "clean": "rimraf dist",
         "start": "node dist/index.bundle.js",
-        "heroku-prebuild": "webpack -p --config ./webpack.config.js --progress"
+        "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
     },
     "dependencies": {
         "@babel/core": "^7.2.2",
