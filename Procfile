@@ -1,1 +1,1 @@
-web: yarn dev:yarn
+web: yarn build

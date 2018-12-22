@@ -49,6 +49,7 @@
         "webpack-node-externals": "^1.7.2"
     },
     "engines": {
-        "node": "10.9.0"
+        "node": "10.9.0",
+        "yarn": "1.12.3"
     }
 }
