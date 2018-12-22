@@ -1,8 +1,11 @@
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
      mode: 'production',
+     plugins: [
+       new CleanWebpackPlugin(['dist']),
      externals: [nodeExternals()],
      //This is where webpack will compile from
      entry: {
