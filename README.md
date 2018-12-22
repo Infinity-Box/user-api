@@ -1,7 +1,6 @@
 # user-api
 
-user login api complete with authentication & authorization that contains these user parameters {
-email
+user login api complete with authentication & authorization that contains these user parameters
 
 ## Getting Started
 
