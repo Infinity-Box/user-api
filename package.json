@@ -6,10 +6,12 @@
     "author": "Jasmine Anderson <jazz2900@gmail.com>",
     "license": "MIT",
     "scripts": {
-      "clean": "rimraf dist",
-      "dev:node": "npm run clean && webpack --mode development && cross-env NODE_ENV=development nodemon dist/index.bundle.js",
-      "dev:yarn": "yarn run clean && webpack --mode development && cross-env NODE_ENV=development nodemon dist/index.bundle.js",
-      "build": "webpack --mode production && cross-env NODE_ENV=production node dist/index.bundle.js"
+        "clean": "rimraf dist",
+        "dev:node": "npm run clean && webpack --mode development && cross-env NODE_ENV=development nodemon dist/index.bundle.js",
+        "dev:yarn": "yarn run clean && webpack --mode development && cross-env NODE_ENV=development nodemon dist/index.bundle.js",
+        "build": "webpack --mode production && cross-env NODE_ENV=production node dist/index.bundle.js",
+        "start": "node server.js",
+        "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
     },
     "dependencies": {
         "bcrypt-nodejs": "^0.0.3",
@@ -29,7 +31,10 @@
         "passport-jwt": "^4.0.0",
         "passport-local": "^1.0.0",
         "slug": "^0.9.3",
-        "validator": "^10.9.0"
+        "validator": "^10.9.0",
+        "webpack": "^4.28.2",
+        "webpack-cli": "^3.1.2",
+        "webpack-node-externals": "^1.7.2"
     },
     "devDependencies": {
         "@babel/core": "^7.2.2",
@@ -42,14 +47,7 @@
         "eslint-plugin-class-property": "1.1.0",
         "morgan": "^1.9.1",
         "nodemon": "^1.18.9",
-        "npm-run-all": "^4.1.5",
-        "rimraf": "^2.6.2",
-        "webpack": "^4.27.1",
-        "webpack-cli": "^3.1.2",
-        "webpack-node-externals": "^1.7.2"
+        "rimraf": "^2.6.2"
     },
-    "engines": {
-        "node": "10.9.0",
-        "yarn": "1.12.3"
-    }
+    "engines": {}
 }
