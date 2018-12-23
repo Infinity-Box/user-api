@@ -22,7 +22,7 @@ app.listen(constants.PORT, err => {
         throw err;
     } else {
       console.log(`
-        Server running on ${constants.PORT}
+        Server running on ${constants.port}
         ---
         Running on ${process.env.NODE_ENV}
         ---

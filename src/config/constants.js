@@ -11,7 +11,7 @@ const prodConfig = {
 };
 
 const defaultConfig = {
-  PORT: process.env.MONGODB_URI || 4000
+  port: process.env.PORT || 4000
 }
 
 
