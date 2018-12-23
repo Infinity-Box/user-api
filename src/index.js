@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 apiRoutes(app);
 
-port = process.env.PORT
+let port = process.env.PORT
 
 app.listen(port, err => {
     if (err) {
