@@ -17,12 +17,12 @@ app.get('/', (req, res) => {
 apiRoutes(app);
 
 
-app.listen(constants.port, err => {
+app.listen(process.env.PORT, err => {
     if (err) {
         throw err;
     } else {
       console.log(`
-        Server running on ${constants.port}
+        Server running on ${process.env.PORT}
         ---
         Running on ${process.env.NODE_ENV}
         ---
