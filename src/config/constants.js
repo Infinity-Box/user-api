@@ -10,10 +10,6 @@ const prodConfig = {
   MONGO_URL:'mongodb://jazz2900:awe123@ds135844.mlab.com:35844/user-api'
 };
 
-const defaultConfig = {
-  PORT: process.env.PORT || 5000
-};
-
 
 function envConfig(env) {
   switch(env) {
@@ -27,6 +23,5 @@ function envConfig(env) {
 }
 
 export default {
-  ...defaultConfig,
   ...envConfig(process.env.NODE_ENV),
 };
