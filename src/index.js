@@ -1,4 +1,5 @@
 import express from 'express';
+const path = require('path');
 
 import constants from './config/constants';
 import './config/database';
