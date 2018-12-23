@@ -9,7 +9,7 @@ module.exports = {
       'index': './src/index.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['dist']),
   ],
    output: {
        path: path.join(__dirname, 'dist'),
