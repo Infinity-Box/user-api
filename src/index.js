@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 apiRoutes(app);
 
 
-app.listen(constants.PORT, err => {
+app.listen(constants.port, err => {
     if (err) {
         throw err;
     } else {
