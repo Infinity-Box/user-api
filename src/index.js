@@ -1,21 +1,21 @@
 import express from 'express';
 import path from 'path';
-
+//
 // import constants from './config/constants';
 // import './config/database';
-import middlewaresConfig from './config/middlewares';
+// import middlewaresConfig from './config/middlewares';
 
-import apiRoutes from './modules';
+// import apiRoutes from './modules';
 
 const app = express();
 
-middlewaresConfig(app)
+// middlewaresConfig(app)
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-apiRoutes(app);
+// apiRoutes(app);
 
 let port = process.env.PORT
 
