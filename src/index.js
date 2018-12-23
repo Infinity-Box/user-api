@@ -18,7 +18,7 @@ apiRoutes(app);
 
 port = process.env.PORT
 
-app.listen(port err => {
+app.listen(port, err => {
     if (err) {
         throw err;
     } else {
