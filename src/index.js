@@ -1,8 +1,8 @@
 import express from 'express';
 import path from 'path';
 
-import constants from './config/constants';
-import './config/database';
+// import constants from './config/constants';
+// import './config/database';
 import middlewaresConfig from './config/middlewares';
 
 import apiRoutes from './modules';
