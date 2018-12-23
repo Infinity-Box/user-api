@@ -1,5 +1,5 @@
 import express from 'express';
-const path = require('path');
+import path from 'path';
 
 import constants from './config/constants';
 import './config/database';
@@ -35,4 +35,9 @@ apiRoutes(app);
 
 import http from 'http'
 
-http.createServer(function (req, res) { res.writeHead(200, {'Content-Type': 'text/plain'}); res.send('it is running\n'); }).listen(process.env.PORT || 5000);
+// http.createServer(function (req, res) { res.writeHead(200, {'Content-Type': 'text/plain'}); res.send('it is running\n'); }).listen(process.env.PORT || 5000);
+
+
+server = http.createServer handle
+
+server.listen process.env.PORT || 5000
