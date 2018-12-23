@@ -16,13 +16,14 @@ app.get('/', (req, res) => {
 
 apiRoutes(app);
 
+port = process.env.PORT
 
-app.listen(process.env.PORT, err => {
+app.listen(port err => {
     if (err) {
         throw err;
     } else {
       console.log(`
-        Server running on ${process.env.PORT}
+        Server running on ${port}
         ---
         Running on ${process.env.NODE_ENV}
         ---
